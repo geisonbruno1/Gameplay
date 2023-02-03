@@ -7,14 +7,31 @@
 
 html, body {
     font-family: "Poppins" sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-:root {
-
+:root { 
+    --color-green-pool:#38AF90;
+    --color-light-red:#DD7E92;
+    --color-dark-gray:#383838;
+    --color-light-gray:#F0F0F0;
+    --color-white:#FFF;
+    --color-gray:#797979;
 }
+
+.color-green {
+    color: var(--color-green-pool);
+}
+
+
+.line {
+    background-color: var(--color-green-pool);
+    border: 1px solid #38af90;
+  }
 
 .nav-container {
-    background-color: #38AF90;
+    background-color: var(--color-green-pool);
     height: 90px;
     width: 100%;
     display: flex;
@@ -45,7 +62,7 @@ html, body {
 }
 
 .nav-main a {
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
     line-height: 36px;
     font-weight: 700;
@@ -53,7 +70,7 @@ html, body {
 
 .nav-brand {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold
 }
 
 .menu-items {
@@ -63,7 +80,256 @@ html, body {
 }
 
 
-@media screen and (max-width:320px) {
+.last-new {
+    color: var(--color-gray);
+    padding: 0 10px;
+}
+
+.last-new h1 {
+    text-align: center;
+    padding: 39px 8px 0;
+}
+
+
+.card-last-news {
+    background-color: var(--color-light-gray);
+    padding: 16px 12px 12px 12px;
+    border-radius: 8px;
+    margin: 15px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
+}
+
+.card-last-news h2 {
+    font-size: 16px;
+}
+
+.card-last-news h3 {
+    font-size: 12px;
+    color: var(--color-gray);
+    padding: 5px;
+}
+
+.date {
+    font-size: 10px;
+    padding: 6px;
+}
+
+.paragraph-news {
+    font-size: 10px;
+    color: var(--color-gray);
+}
+
+.load-more {
+    color: var(--color-light-red);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.button {
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.load-more-button {
+    background-color: var(--color-light-red);
+    padding: 20px 56px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    color: var(--color-white);
+}
+
+.games {
+    background-color: var(--color-light-gray);
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.games h1 {
+    color: var(--color-green-pool);
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.container-card-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card-games {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-games img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-games h2 {
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    color: var(--color-gray);
+}
+
+.games-creator {
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-gray);
+}
+
+.word {
+    color: var(--color-green-pool);
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.grade {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-green-pool);
+    padding: 15px 0;
+}
+
+
+.subscription {
+    padding: 10px;
+    color: var(--color-gray);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.subscription h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-subscription {
+    padding: 50px 10px 30px 10px;
+    background-color: var(--color-light-gray);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    display: flex;
+    max-width: 790px;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 790px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.personal {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-gray);
+    padding-left: 20px;
+    
+}
+
+#ctrl-console {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.container-buttons {
+    padding: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+.submit-button {
+    background-color: var(--color-light-red);
+    color: var(--color-white);
+    font-weight: 700;
+    height: 65px;
+    border: var(--color-light-red);
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+
+  .clear-button {
+    font-weight: 700;
+    border: 2px solid #dd7e92;
+    color: var(--color-light-red);
+    height: 65px;
+    background-color: var(--color-white);
+    font-size: 18px;
+    max-width: 700px;
+    border-radius: 8px;
+  }
+
+  .options {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .accept-news {
+    margin-top: 25px;
+  }
+  
+  .type-size {
+    width: 23px;
+    height: 23px;
+  }
+
+
+  footer {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-dark-gray);
+  }
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .use-terms  {
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  
+
+
+@media screen and (max-width: 768px) {
 
     .nav-list-container {
         display: none;
