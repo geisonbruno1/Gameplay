@@ -47,14 +47,10 @@ html, body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
-.nav-list-container {
-    display: flex;
-    align-items: center;
-}
 
 .nav-list-container li {
     margin-right: 30px;
@@ -78,6 +74,9 @@ html, body {
     align-items: center;
 }
 
+.nav-list-container {
+    display: none;
+}
 
 .last-new {
     color: var(--color-gray);
@@ -86,7 +85,7 @@ html, body {
 
 .last-new h1 {
     text-align: center;
-    padding: 39px 8px 0;
+    margin: 40px 0 8px 0;    
 }
 
 
@@ -94,7 +93,7 @@ html, body {
     background-color: var(--color-light-gray);
     padding: 16px 12px 12px 12px;
     border-radius: 8px;
-    margin: 15px;
+    margin-bottom: 30px;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
 }
 
@@ -239,9 +238,13 @@ html, body {
     margin-bottom: 20px;
     border: 1px solid var(--color-gray);
     padding-left: 20px;
-    
 }
 
+input::placeholder {
+    color: #c4c4c4;
+}
+
+ 
 #ctrl-console {
     display: flex;
     flex-direction: column;
@@ -255,7 +258,8 @@ html, body {
     text-align: center;
     flex-direction: column;
     display: flex;
-    font-family: "Poppins", sans-serif;
+    align-items: center;
+    gap: 20px;
 }
 
 .submit-button {
@@ -263,11 +267,11 @@ html, body {
     color: var(--color-white);
     font-weight: 700;
     height: 65px;
+    max-width: 350px;
     border: var(--color-light-red);
     font-size: 18px;
-    max-width: 700px;
-    margin-bottom: 20px;
     border-radius: 8px;
+    width: 100%;
   }
 
   .clear-button {
@@ -277,8 +281,9 @@ html, body {
     height: 65px;
     background-color: var(--color-white);
     font-size: 18px;
-    max-width: 700px;
     border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
   }
 
   .options {
@@ -328,24 +333,34 @@ footer p {
   
 
 @media (min-width: 768px) {
+
+    .nav-list-container a {
+        font-size: 14px;
+        font-weight: 500;
+    }
     
+   .nav-brand {
+        font-size: 24px
+    }
+
+    .nav-list-container {
+        display: flex;
+    }
 
     h1 {
         font-size: 30px;
         margin-bottom: 40px;
     }
 
-    .last-news h2{
+    .last-new h2{
         font-size: 24px;
         margin-bottom: 0;
-        font-weight: 700;
       }
 
-      .last-news h3 {
+      .last-new h3 {
         font-size: 16px;
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: 700;
       }
 
       .card-last-news {
@@ -353,8 +368,25 @@ footer p {
         padding: 15px 30px;
       }
 
+      .games h1, .subscription h1 {
+        font-size: 36px;
+      }
+
       .container-buttons {
         margin-top: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
     }
+
+    .clear-button {
+        width: 250px;
+    }
+
+    .submit-button {
+        width: 250px;
+
+}
 
 }
