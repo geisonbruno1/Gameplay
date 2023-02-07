@@ -47,9 +47,8 @@ html, body {
 
 .container {
     width: 100%;
-    max-width: 990px;
+    max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .nav-list-container {
@@ -328,11 +327,34 @@ footer p {
 
   
 
+@media (min-width: 768px) {
+    
 
-@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
 
-    .nav-list-container {
-        display: none;
+    .last-news h2{
+        font-size: 24px;
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+
+      .last-news h3 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+
+      .card-last-news {
+        margin-bottom: 50px;
+        padding: 15px 30px;
+      }
+
+      .container-buttons {
+        margin-top: 10px;
     }
 
 }
