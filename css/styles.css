@@ -371,6 +371,11 @@ footer p {
       .games h1, .subscription h1 {
         font-size: 36px;
       }
+      
+      .card-subscription {
+        padding: 50px 70px;
+    }
+
 
       .container-buttons {
         margin-top: 10px;
@@ -386,7 +391,12 @@ footer p {
 
     .submit-button {
         width: 250px;
-
 }
+
+footer {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 80 0;
+  }
 
 }
